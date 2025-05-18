@@ -19,17 +19,17 @@ O Copilot gerou o código prontamente.
 
 Solicitei ao chat do Copilot uma única modificação no código: permitir que o número do cartão fosse inserido via input em tempo de execução, e não no código, como apresentado na aula do **Felipão da DIO**.
 
-<img src="prompt_and_code.png" alt="prompt_and_code" width="500"/>
+<img src="images/prompt_and_code.png" alt="prompt_and_code" width="500"/>
 
 ---
 
 Outra melhoria importante foi especificar melhor os dados de entrada. Na aula do Felipão não era levado em conta o número de dígitos de cada bandeira, e o código gerado para a função Regex foi assim:
 
-<img src="code_felipao.png" alt="code_felipao" width="500"/>
+<img src="images/code_felipao.png" alt="code_felipao" width="500"/>
 
 Como os cartões **American Express** e **Diners Club** possuem 15 e 14 dígitos respectivamente, e não os usuais 16, o código foi ajustado para:
 
-<img src="code_regex.png" alt="code_regex" width="500"/>
+<img src="images/code_regex.png" alt="code_regex" width="500"/>
 
 ---
 
@@ -37,7 +37,7 @@ Porém, a Regex apenas garante que o número está formatado corretamente, mas n
 
 Para isso, criei um outro arquivo `luhn.js` com a função `luhnCheck(numeroCartao)`:
 
-<img src="luhn_check.png" alt="luhn_check" width="500"/>
+<img src="images/luhn_check.png" alt="luhn_check" width="500"/>
 
 O `index.js` chama essa função. Assim, utilizando ambos — **Regex** e **Luhn Algorithm** —, é possível reduzir erros e fraudes em aplicações.
 
@@ -78,6 +78,11 @@ O algoritmo funciona realizando operações matemáticas sobre os dígitos do n�
 ---
 
 ## 📂 Estrutura de Pastas
+
+- 📁 **GITHUB_COPILOT**
+  - 📁 **images**
+  - 📁 **src**
+  - READMME
 
 
 ---
